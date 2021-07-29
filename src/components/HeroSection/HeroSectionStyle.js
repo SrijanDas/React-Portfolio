@@ -6,7 +6,7 @@ const HeroStyle = styled.div`
     background-color: #202125;
     display: flex;
     padding: 5rem 5rem 0rem 5rem;
-    gap: 10rem;
+    /* gap: 10rem; */
     justify-content: space-around;
     align-items: center;
   }
@@ -31,15 +31,6 @@ const HeroStyle = styled.div`
     margin-bottom: 2rem;
   }
 
-  .hero_btn {
-    text-transform: lowercase;
-    width: 20rem;
-    height: 5rem;
-    font-size: large;
-  }
-  /* .MuiButton-label {
-    color: black !important;
-  } */
   .hero__right {
     display: flex;
     justify-content: center;
@@ -95,7 +86,7 @@ const HeroStyle = styled.div`
         a {
           display: inline-block;
           font-size: 1.6rem;
-          transform: rotate(-90deg);
+          /* transform: rotate(-90deg); */
           letter-spacing: 5px;
           margin-bottom: 2rem;
         }
@@ -105,9 +96,9 @@ const HeroStyle = styled.div`
 
   @media only screen and (max-width: 768px) {
     .hero {
-      /* min-height: 750px; */
+      padding: 0;
       flex-direction: column;
-      gap: 1rem;
+      gap: 0;
     }
     .hero__heading {
       font-size: 1.4rem;
@@ -119,13 +110,15 @@ const HeroStyle = styled.div`
     .isFmvA {
       margin-left: 0;
     }
+    .hero__left {
+      padding: 2rem 2rem 0rem 2rem;
+    }
     .hero__right {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       width: 100%;
-      margin-bottom: 3rem;
       img {
         width: 100%;
         height: 450px;

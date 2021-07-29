@@ -4,7 +4,10 @@ import HeroImg from "../../assets/images/hero.jpg";
 import SocialMediaArrow from "../../assets/images/social-media-arrow.svg";
 import ScrollDownArrow from "../../assets/images/scroll-down-arrow.svg";
 import PText from "../PText";
-import { Button } from "@material-ui/core";
+import StyledButton from "../StyledButton";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
 export default function HeroSection() {
   return (
     <div className="container">
@@ -19,15 +22,7 @@ export default function HeroSection() {
               I am a self taught web designer, developer and machine learning
               engineer. I love to design and make new projects for the people.
             </PText>
-            <Button
-              className="hero_btn"
-              variant="outlined"
-              color="primary"
-              size="large"
-              disableElevation
-            >
-              see my works
-            </Button>
+            <StyledButton btnLink="/projects" btnText="see my works" />
           </div>
           <div className="hero__right">
             <img src={HeroImg} alt="" />
@@ -42,38 +37,29 @@ export default function HeroSection() {
               <ul>
                 <li>
                   <a
-                    href="http://facebook.com/webcifar"
+                    href="https://github.com/SrijanDas"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    FB
+                    <GitHubIcon fontSize="large" />
                   </a>
                 </li>
                 <li>
                   <a
-                    href="http://twitter.com/webcifar"
+                    href="https://twitter.com/Srijan_1805"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    TW
+                    <TwitterIcon fontSize="large" />
                   </a>
                 </li>
                 <li>
                   <a
-                    href="http://isntagram.com/web_cifar"
+                    href="https://www.linkedin.com/in/srijan-das-3591791b3"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    IG
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="http://webcifar.com"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    LI
+                    <LinkedInIcon fontSize="large" />
                   </a>
                 </li>
               </ul>
