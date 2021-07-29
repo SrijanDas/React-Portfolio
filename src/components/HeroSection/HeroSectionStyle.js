@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 const HeroStyle = styled.div`
   .hero {
-    margin-top: 8rem;
+    height: 100vh;
     background-color: #202125;
     display: flex;
-    padding: 5rem 5rem 0rem 5rem;
-    /* gap: 10rem; */
+    padding: 10rem;
     justify-content: space-around;
     align-items: center;
+    position: relative;
   }
   .hero_left {
     width: 50%;
@@ -96,7 +96,7 @@ const HeroStyle = styled.div`
 
   @media only screen and (max-width: 768px) {
     .hero {
-      padding: 0;
+      padding: 2rem 2rem 0 2rem;
       flex-direction: column;
       gap: 0;
     }

@@ -37,7 +37,7 @@ const GlobalStyles = createGlobalStyle`
     margin: 0 auto;
   }
 /* Smooth Scroll  */
-  [data-scrollbar] {
+[data-scrollbar] {
     height: 100vh;
     overflow: hidden;
     background-color: var(--gray-1);
@@ -45,6 +45,7 @@ const GlobalStyles = createGlobalStyle`
       background-color: var(--dark-bg);
     }
     .scrollbar-track.scrollbar-track-y {
+      z-index: 101;
       background: var(--deep-dark);
       .scrollbar-thumb-y {
         background: var(--gray-1);

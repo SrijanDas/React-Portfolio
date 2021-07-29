@@ -10,8 +10,8 @@ import TwitterIcon from "@material-ui/icons/Twitter";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 export default function HeroSection() {
   return (
-    <div className="container">
-      <HeroStyles>
+    <HeroStyles>
+      <div className="container">
         <div className="hero">
           <div className="hero__left">
             <h1 className="hero__heading">
@@ -41,7 +41,7 @@ export default function HeroSection() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <GitHubIcon fontSize="large" />
+                    <GitHubIcon />
                   </a>
                 </li>
                 <li>
@@ -50,7 +50,7 @@ export default function HeroSection() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <TwitterIcon fontSize="large" />
+                    <TwitterIcon />
                   </a>
                 </li>
                 <li>
@@ -59,7 +59,7 @@ export default function HeroSection() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <LinkedInIcon fontSize="large" />
+                    <LinkedInIcon />
                   </a>
                 </li>
               </ul>
@@ -70,7 +70,7 @@ export default function HeroSection() {
             <img src={ScrollDownArrow} alt="ScrollDown Arrow" />
           </div>
         </div>
-      </HeroStyles>
-    </div>
+      </div>
+    </HeroStyles>
   );
 }
