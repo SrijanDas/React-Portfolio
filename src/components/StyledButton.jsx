@@ -6,7 +6,8 @@ import Button from "@material-ui/core/Button";
 const ButtonStyle = styled.div`
   button {
     border: 2px solid var(--gray-1);
-    width: 20rem;
+    min-width: 20rem;
+    max-width: auto;
     height: 5rem;
     font-size: large;
     text-transform: inherit;

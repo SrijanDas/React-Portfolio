@@ -1,5 +1,6 @@
 import React from "react";
 import AboutSection from "../../components/AboutSection/AboutSection";
+import ContactBanner from "../../components/ContactBanner";
 import HeroSection from "../../components/HeroSection/HeroSection";
 import ServicesSection from "../../components/ServicesSection/ServicesSection";
 export default function Home() {
@@ -10,7 +11,7 @@ export default function Home() {
       <ServicesSection />
       {/* <ProjectsSection /> */}
       {/* <TestimonialsSection /> */}
-      {/* <ContactBanner /> */}
+      <ContactBanner />
     </div>
   );
 }
