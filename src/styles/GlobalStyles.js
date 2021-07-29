@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 *{
@@ -30,9 +30,7 @@ const GlobalStyles = createGlobalStyle`
     height: 100%;
     object-fit: cover;
   }
-  button{
-    outline: none
-  }
+ 
   .container {
     max-width: 1200px;
     width: 90%;
