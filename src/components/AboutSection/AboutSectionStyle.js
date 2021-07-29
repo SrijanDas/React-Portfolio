@@ -7,6 +7,7 @@ const AboutSectionStyle = styled.div`
     align-items: center;
     justify-content: flex-start;
     text-align: left;
+    gap: 5rem;
   }
   .aboutSection__left,
   .aboutSection__right {
@@ -54,6 +55,7 @@ const AboutSectionStyle = styled.div`
     .container {
       flex-direction: column;
       text-align: center;
+      gap: 0;
     }
     .aboutSection__left,
     .aboutSection__right {
