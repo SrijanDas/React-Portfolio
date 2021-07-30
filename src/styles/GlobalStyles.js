@@ -40,7 +40,7 @@ const GlobalStyles = createGlobalStyle`
 [data-scrollbar] {
     height: 100vh;
     overflow: hidden;
-    background-color: var(--gray-1);
+    background-color: var(--dark-bg);
     .scroll-content {
       background-color: var(--dark-bg);
     }

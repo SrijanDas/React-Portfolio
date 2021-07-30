@@ -52,10 +52,14 @@ const AboutSectionStyle = styled.div`
     }
   }
   @media only screen and (max-width: 768px) {
+    padding-bottom: 0;
     .container {
       flex-direction: column-reverse;
       text-align: center;
       gap: 0;
+    }
+    .aboutImg {
+      margin-top: 2rem;
     }
     .aboutSection__left,
     .aboutSection__right {

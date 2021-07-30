@@ -25,7 +25,7 @@ export default function ServicesSection() {
           <ServicesSectionItem
             icon={<GiBrain />}
             title="Machine Learning"
-            desc="I develop machine learning models to help organisations grow. "
+            desc="I develop machine learning models to solve real world problems. "
           />
         </div>
       </div>

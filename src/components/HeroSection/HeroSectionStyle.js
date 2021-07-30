@@ -12,6 +12,9 @@ const HeroStyle = styled.div`
   }
   .hero_left {
     width: 50%;
+    .hero_btn {
+      margin-top: 2rem;
+    }
   }
   .hero__heading {
     font-size: 2rem;
@@ -96,6 +99,7 @@ const HeroStyle = styled.div`
 
   @media only screen and (max-width: 768px) {
     .hero {
+      margin-top: 7rem;
       padding: 2rem 2rem 0 2rem;
       flex-direction: column;
       gap: 0;
@@ -112,6 +116,9 @@ const HeroStyle = styled.div`
     }
     .hero__left {
       padding: 2rem 2rem 0rem 2rem;
+      button {
+        margin-top: 1rem;
+      }
     }
     .hero__right {
       display: flex;

@@ -22,7 +22,11 @@ export default function HeroSection() {
               I am a self taught web designer, developer and machine learning
               engineer. I love to design and make new projects for the people.
             </PText>
-            <StyledButton btnLink="/projects" btnText="see my projects" />
+            <StyledButton
+              className="hero_btn"
+              btnLink="/projects"
+              btnText="see my projects"
+            />
           </div>
           <div className="hero__right">
             <img src={HeroImg} alt="" />

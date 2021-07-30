@@ -2,6 +2,9 @@ import React from "react";
 import FooterCol from "./FooterCol";
 import PText from "../PText";
 import FooterStyle from "./FooterStyle";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
 
 export default function Footer() {
   return (
@@ -10,10 +13,8 @@ export default function Footer() {
         <div className="footer__col1">
           <h1 className="footer__col1__title">Srijan Das</h1>
           <PText>
-            A self taught web designer,
-            <br /> web developer and machine learning engineer. I always make
-            websites that have unique designs and also has a good performance
-            rate.
+            A web designer, web developer
+            <br /> and machine learning engineer.
           </PText>
         </div>
         <div className="footer__col2">
@@ -64,19 +65,22 @@ export default function Footer() {
         </div>
         <div className="footer__col4">
           <FooterCol
-            heading="social Links"
+            heading="Social Links"
             links={[
               {
-                title: "Facebook",
-                path: "http://facebook.com",
+                startIcon: <GitHubIcon fontSize="large" />,
+                title: "Github",
+                path: "https://github.com/SrijanDas",
               },
               {
+                startIcon: <LinkedInIcon fontSize="large" />,
+                title: "LinkedIn",
+                path: "https://www.linkedin.com/in/srijan-das-3591791b3",
+              },
+              {
+                startIcon: <TwitterIcon fontSize="large" />,
                 title: "Twitter",
-                path: "http://twitter.com",
-              },
-              {
-                title: "Instagram",
-                path: "http://instagram.com",
+                path: "https://twitter.com/Srijan_1805",
               },
             ]}
           />
