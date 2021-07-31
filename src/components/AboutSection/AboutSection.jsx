@@ -20,8 +20,8 @@ export default function AboutSection() {
           <PText>
             I am a website designer, developer and machine learning engineer
             from West Bengal, India. I create professional websites and also
-            analyze data and develop machine learning models to help businesses
-            and organisations grow.
+            analyze data and develop machine learning models to solve real world
+            problems.
           </PText>
           <div className="aboutSection__buttons">
             <StyledButton btnLink="/projects" btnText="Works" />
