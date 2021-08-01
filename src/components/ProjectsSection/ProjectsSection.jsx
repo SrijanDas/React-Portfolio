@@ -43,6 +43,7 @@ export default function ProjectsSection() {
                     title={project.name}
                     img={project.img}
                     desc={project.desc}
+                    tags={project.tags}
                   />
                 </SwiperSlide>
               );

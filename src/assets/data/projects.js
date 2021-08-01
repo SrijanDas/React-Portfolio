@@ -11,6 +11,8 @@ const projects = [
     category: "webdev",
     desc: "This website is a clone of amazone.",
     img: UTrackerImg,
+    tags: ["React", "Firebase"],
+    tagsSlug: "react firebase",
   },
   {
     id: 2,
@@ -18,6 +20,8 @@ const projects = [
     category: "webdev",
     desc: "A Website to connect with people and chat with them.",
     img: GreenCtgImg,
+    tags: ["MongoDb", "Express", "React", "Node", "Firebase", "Heroku"],
+    tagsSlug: "",
   },
   {
     id: 3,
@@ -25,6 +29,8 @@ const projects = [
     category: "webdev",
     desc: "This webapp helps to manage orders and products of a grocery store.",
     img: CoinTrackerImg,
+    tags: ["React", "Python", "Flask", "MySql", "Heroku", "Firebase"],
+    tagsSlug: "",
   },
   {
     id: 4,
@@ -32,6 +38,8 @@ const projects = [
     category: "webdev",
     desc: "A webapp where you can chat with friends and family.",
     img: CavinImg,
+    tags: ["React", "Firebase"],
+    tagsSlug: "",
   },
   {
     id: 5,
@@ -39,6 +47,8 @@ const projects = [
     category: "ml",
     desc: "Helps you to calculate price of a used car with the help of machine learning.",
     img: ProjectImg,
+    tags: ["Python", "Flask", "Machine Learning", "Heroku"],
+    tagsSlug: "",
   },
   {
     id: 6,
@@ -46,6 +56,8 @@ const projects = [
     category: "ml",
     desc: "This website recommends you movies based on your search history.",
     img: ProjectImg,
+    tags: ["Python", "Flask", "Machine Learning", "Heroku"],
+    tagsSlug: "",
   },
 ];
 

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const ProjectItemStyles = styled.div`
+export const ProjectItemStyles = styled.div`
   .projectItem__img {
     width: 100%;
     height: 400px;
@@ -32,4 +32,14 @@ const ProjectItemStyles = styled.div`
     }
   }
 `;
-export default ProjectItemStyles;
+export const ChipStyle = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  .projectItem__chip {
+    background-color: var(--gray-2);
+  }
+  span {
+    font-size: 1.6rem;
+  }
+`;
