@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 const ProjectStyle = styled.div`
   padding: 10rem 0;
+  .projects-wrapper {
+    margin-top: 5rem;
+  }
   .projects__allItems {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -29,6 +32,11 @@ const ProjectStyle = styled.div`
   }
   .projects__searchBar .searchIcon path {
     color: var(--deep-dark);
+  }
+  .projects_noResults {
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-align: center;
   }
   @media only screen and (max-width: 768px) {
     .projects__searchBar,

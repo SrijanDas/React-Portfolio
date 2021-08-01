@@ -21,10 +21,12 @@ export default function StyledButton({
   btnText = "Button",
   btnLink = "/",
   outline = false,
+  externalLink = false,
 }) {
   const history = useHistory();
   const routChange = () => {
-    history.push(btnLink);
+    if (externalLink) window.open(btnLink, "_blank");
+    else history.push(btnLink);
   };
   return (
     <ButtonStyle outline={outline}>

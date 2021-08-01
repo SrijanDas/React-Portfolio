@@ -2,27 +2,42 @@ import React from "react";
 import ProjectImg from "../../assets/images/projectImg.png";
 import { ProjectItemStyles, ChipStyle } from "./ProjectItemStyles";
 import Chip from "@material-ui/core/Chip";
+import StyledButton from "../../components/StyledButton";
 
 export default function ProjectItem({
-  img = ProjectImg,
-  title = "Project Name",
-  desc = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  tags = [],
+  item = {
+    img: ProjectImg,
+    name: "Project Name",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    tags: [],
+    code: "#",
+    demo: "#",
+  },
 }) {
+  const { img, name, desc, tags, demo, code } = item;
   return (
     <ProjectItemStyles>
       <div className="projectItem__img">
         <img src={img} alt="project img" />
       </div>
       <div className="projectItem__info">
-        <h3 className="projectItem__title">{title}</h3>
+        <h3 className="projectItem__title">{name}</h3>
         <p className="projectItem__desc">{desc}</p>
         <br />
         <ChipStyle>
-          {tags.map((tag) => (
-            <Chip label={tag} className="projectItem__chip" />
+          {tags.map((tag, index) => (
+            <Chip label={tag} key={index} className="projectItem__chip" />
           ))}
         </ChipStyle>
+        <div className="projectItem__btns">
+          <StyledButton externalLink btnLink={demo} btnText="Demo" />
+          <StyledButton
+            externalLink
+            btnLink={code}
+            btnText="Source Code"
+            outline
+          />
+        </div>
       </div>
     </ProjectItemStyles>
   );

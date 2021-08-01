@@ -4,6 +4,7 @@ import SectionTitle from "../../components/SectionTitle";
 import ProjectsInfo from "../../assets/data/projects";
 import ProjectStyle from "./ProjectStyle";
 import ProjectItem from "../../components/ProjectItem/ProjectItem";
+import { HrStyle } from "./HrStyle";
 
 export default function Projects() {
   const [searchText, setSearchText] = useState("");
@@ -39,26 +40,22 @@ export default function Projects() {
   function ProjectsInfoComponent() {
     return (
       <>
-        <SectionTitle heading="Webdev" subheading="" />
-        {webdevProjects.map((item) => (
-          <ProjectItem
-            key={item.id}
-            title={item.name}
-            desc={item.desc}
-            img={item.img}
-            tags={item.tags}
-          />
-        ))}
-        <SectionTitle heading="Machine Learning" subheading="" />
-        {mlProjects.map((item) => (
-          <ProjectItem
-            key={item.id}
-            title={item.name}
-            desc={item.desc}
-            img={item.img}
-            tags={item.tags}
-          />
-        ))}
+        <div className="projects-wrapper">
+          <SectionTitle heading="Webdev" subheading="" />
+          <div className="projects__allItems">
+            {webdevProjects.map((item) => (
+              <ProjectItem key={item.id} item={item} />
+            ))}
+          </div>
+        </div>
+        <div className="projects-wrapper">
+          <SectionTitle heading="Machine Learning" subheading="" />
+          <div className="projects__allItems">
+            {mlProjects.map((item) => (
+              <ProjectItem key={item.id} item={item} />
+            ))}
+          </div>
+        </div>
       </>
     );
   }
@@ -82,21 +79,24 @@ export default function Projects() {
               <MdSearch className="searchIcon" />
             </form>
           </div>
-          <div className="projects__allItems">
-            {isSearching ? (
-              projectsData.map((item) => (
-                <ProjectItem
-                  key={item.id}
-                  title={item.name}
-                  desc={item.desc}
-                  img={item.img}
-                  tags={item.tags}
-                />
-              ))
+          <HrStyle>
+            <hr />
+          </HrStyle>
+          {isSearching ? (
+            projectsData.length >= 1 ? (
+              <div className="projects__allItems">
+                {projectsData.map((item) => (
+                  <ProjectItem key={item.id} item={item} />
+                ))}
+              </div>
             ) : (
-              <ProjectsInfoComponent />
-            )}
-          </div>
+              <div className="projects_noResults">
+                <span> No results found!</span>
+              </div>
+            )
+          ) : (
+            <ProjectsInfoComponent />
+          )}
         </div>
       </ProjectStyle>
     </>

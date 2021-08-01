@@ -26,6 +26,16 @@ export const ProjectItemStyles = styled.div`
     font-family: "RobotoMono Regular";
     margin-top: 1rem;
   }
+  .projectItem__btns {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 0.2rem;
+    button {
+      width: 100% !important;
+    }
+  }
   @media only screen and (max-width: 768px) {
     .projectItem__img {
       height: 350px;
