@@ -3,19 +3,18 @@ import styled from "styled-components";
 const AboutItemStyles = styled.div`
   display: flex;
   align-items: center;
-  /* justify-content: flex-start; */
-  /* position: relative; */
-  gap: 5rem;
+  gap: 4rem;
   margin-top: 3rem;
   .title {
     font-size: 2.4rem;
+    flex: 1;
     word-wrap: break-word;
   }
   .items {
+    flex: 4;
     display: flex;
     gap: 1.5rem;
-    /* position: absolute; */
-    left: 18rem;
+    flex-wrap: wrap;
   }
   .item {
     background-color: var(--deep-dark);
