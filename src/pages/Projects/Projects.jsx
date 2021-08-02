@@ -4,7 +4,6 @@ import SectionTitle from "../../components/SectionTitle";
 import ProjectsInfo from "../../assets/data/projects";
 import ProjectStyle from "./ProjectStyle";
 import ProjectItem from "../../components/ProjectItem/ProjectItem";
-import { HrStyle } from "./HrStyle";
 
 export default function Projects() {
   const [searchText, setSearchText] = useState("");
@@ -26,7 +25,6 @@ export default function Projects() {
         ProjectsInfo.filter(
           (item) =>
             item.name.toLowerCase().match(searchText.toLowerCase()) ||
-            item.desc.toLowerCase().match(searchText.toLowerCase()) ||
             item.tags.toString().toLowerCase().match(searchText.toLowerCase())
         )
       );
@@ -79,9 +77,9 @@ export default function Projects() {
               <MdSearch className="searchIcon" />
             </form>
           </div>
-          <HrStyle>
-            <hr />
-          </HrStyle>
+
+          <hr style={{ marginTop: "5rem" }} />
+
           {isSearching ? (
             projectsData.length >= 1 ? (
               <div className="projects__allItems">
