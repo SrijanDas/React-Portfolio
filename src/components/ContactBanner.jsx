@@ -5,8 +5,9 @@ import PText from "./PText";
 
 const ContactBannerStyles = styled.div`
   padding: 5rem 0;
+  margin-bottom: 15rem;
   .contactBanner__wrapper {
-    background-color: var(--deep-dark);
+    background-color: rgb(30, 30, 30, 0.5);
     border-radius: 12px;
     padding: 5rem 0rem;
     text-align: center;

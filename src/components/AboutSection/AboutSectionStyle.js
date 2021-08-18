@@ -60,6 +60,8 @@ const AboutSectionStyle = styled.div`
     }
     .aboutImg {
       margin-top: 2rem;
+      /* height: 40rem; */
+      object-fit: contain;
     }
     .aboutSection__left,
     .aboutSection__right {

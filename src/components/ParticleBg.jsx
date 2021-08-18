@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import React from "react";
 import Particles from "react-particles-js";
-import particlesConfig from "../config/particle-config";
+import { particlesConfig2 } from "../config/particle-config";
 
 const ParticleStyles = styled.div`
   z-index: -100;
@@ -10,10 +10,10 @@ const ParticleStyles = styled.div`
   height: 100vh;
 `;
 
-export default function ParticleBg(props) {
+export default function ParticleBg() {
   return (
     <ParticleStyles>
-      <Particles params={particlesConfig}></Particles>;
+      <Particles params={particlesConfig2} />
     </ParticleStyles>
   );
 }

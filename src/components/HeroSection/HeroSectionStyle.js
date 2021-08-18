@@ -3,7 +3,7 @@ import styled from "styled-components";
 const HeroStyle = styled.div`
   .hero {
     height: 100vh;
-    /* background-color: #202125; */
+    background: none !important;
     display: flex;
     padding: 10rem;
     justify-content: space-around;
