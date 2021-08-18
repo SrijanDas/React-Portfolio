@@ -1,5 +1,5 @@
 import React from "react";
-import ComputerIcon from "@material-ui/icons/Computer";
+// import ComputerIcon from "@material-ui/icons/Computer";
 import CodeIcon from "@material-ui/icons/Code";
 import SectionTitle from "../SectionTitle";
 import ServicesSectionItem from "../ServicesSectionItem/ServicesSectionItem";
@@ -12,11 +12,11 @@ export default function ServicesSection() {
       <div className="container">
         <SectionTitle subheading="What i will do for you" heading="Services" />
         <div className="services__allItems">
-          <ServicesSectionItem
+          {/* <ServicesSectionItem
             icon={<ComputerIcon fontSize="large" />}
             title="Web Design"
             desc="I do ui/ux design for the website that helps website to get a unique look."
-          />
+          /> */}
           <ServicesSectionItem
             icon={<CodeIcon />}
             title="Web Dev"

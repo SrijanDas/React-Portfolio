@@ -33,7 +33,8 @@ const ProjectSectionStyle = styled.div`
     font-size: 2rem;
   }
   @media only screen and (max-width: 768px) {
-    padding: 10rem 0;
+    padding-bottom: 0;
+    padding-top: 8rem;
     .projects__allItems {
       flex-direction: column;
       max-width: 400px;

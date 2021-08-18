@@ -8,7 +8,7 @@ const ButtonStyle = styled.div`
     border: 2px solid var(--gray-1);
     min-width: 20rem;
     max-width: auto;
-    height: 5rem;
+    height: 4rem;
     font-size: large;
     text-transform: inherit;
     span {

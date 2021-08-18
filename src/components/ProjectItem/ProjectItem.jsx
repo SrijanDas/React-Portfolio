@@ -13,6 +13,7 @@ export default function ProjectItem({
     code: "#",
     demo: "#",
   },
+  showTags = false,
 }) {
   const { img, name, desc, tags, demo, code } = item;
   return (
@@ -24,11 +25,13 @@ export default function ProjectItem({
         <h3 className="projectItem__title">{name}</h3>
         <p className="projectItem__desc">{desc}</p>
         <br />
-        <ChipStyle>
-          {tags.map((tag, index) => (
-            <Chip label={tag} key={index} className="projectItem__chip" />
-          ))}
-        </ChipStyle>
+        {showTags ? (
+          <ChipStyle>
+            {tags.map((tag, index) => (
+              <Chip label={tag} key={index} className="projectItem__chip" />
+            ))}
+          </ChipStyle>
+        ) : null}
         <div className="projectItem__btns">
           <StyledButton externalLink btnLink={demo} btnText="Demo" />
           <StyledButton

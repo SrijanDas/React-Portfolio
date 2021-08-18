@@ -41,7 +41,22 @@ export const ProjectItemStyles = styled.div`
       height: 350px;
     }
   }
+  @media only screen and (max-width: 544px) {
+    .projectItem__img {
+      height: 200px;
+    }
+    .projectItem__title {
+      font-size: 1.9rem;
+    }
+    .projectItem__desc {
+      font-size: 1.3rem;
+    }
+    .projectItem__btns {
+      margin-top: 0;
+    }
+  }
 `;
+
 export const ChipStyle = styled.div`
   display: flex;
   flex-wrap: wrap;
