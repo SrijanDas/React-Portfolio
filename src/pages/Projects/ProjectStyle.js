@@ -7,14 +7,16 @@ const ProjectStyle = styled.div`
   }
   .projects__allItems {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
     gap: 5rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
   .projects__searchBar {
     position: relative;
-    width: 300px;
+    width: 80%;
     margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
   }
   .projects__searchBar input {
     width: 100%;

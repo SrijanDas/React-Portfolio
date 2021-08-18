@@ -6,10 +6,10 @@ import Button from "@material-ui/core/Button";
 const ButtonStyle = styled.div`
   button {
     border: 2px solid var(--gray-1);
-    min-width: 20rem;
-    max-width: auto;
+    /* min-width: 20rem; */
+    /* width: 100%; */
     height: 4rem;
-    font-size: large;
+    font-size: 1.5rem;
     text-transform: inherit;
     span {
       color: ${(props) => (props.outline ? "var(--gray-1)" : "black")};

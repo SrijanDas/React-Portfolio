@@ -1,10 +1,11 @@
 import ProjectImg from "../images/projectImg.png";
-import AmazonCloneImg from "../images/amazon-clone.jpg";
+// import AmazonCloneImg from "../images/amazon-clone.jpg";
 import SocialsImg from "../images/socials.jpg";
 import GroceryStoreImg from "../images/grocery-store.jpg";
-import CavinImg from "../images/cavinimg.jpg";
+// import CavinImg from "../images/cavinimg.jpg";
 import ImageClassificationImg from "../images/image_class.png";
 import UsedCarPriceImg from "../images/car_price.png";
+import SalaryPredImg from "../images/sal_pred.png";
 
 const projects = [
   {
@@ -68,7 +69,7 @@ const projects = [
     demo: "#",
   },
   {
-    id: 6,
+    id: 7,
     name: "Sports Person Classifier",
     category: "ml",
     desc: "Classifies images of sports persons.",
@@ -78,11 +79,11 @@ const projects = [
     demo: "https://sports-person-classify.netlify.app/",
   },
   {
-    id: 7,
+    id: 8,
     name: "Developer Salary Prediction",
     category: "ml",
     desc: "Predicts the salary of developers based on some factors.",
-    img: ProjectImg,
+    img: SalaryPredImg,
     tags: ["Python", "Machine Learning", "Streamlit", "Heroku"],
     code: "#",
     demo: "#",

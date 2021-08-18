@@ -42,7 +42,7 @@ export default function Projects() {
           <SectionTitle heading="Webdev" subheading="" />
           <div className="projects__allItems">
             {webdevProjects.map((item) => (
-              <ProjectItem key={item.id} item={item} />
+              <ProjectItem key={item.id} item={item} showTags horizontal />
             ))}
           </div>
         </div>
@@ -50,7 +50,7 @@ export default function Projects() {
           <SectionTitle heading="Machine Learning" subheading="" />
           <div className="projects__allItems">
             {mlProjects.map((item) => (
-              <ProjectItem key={item.id} item={item} />
+              <ProjectItem key={item.id} item={item} showTags horizontal />
             ))}
           </div>
         </div>
@@ -78,13 +78,15 @@ export default function Projects() {
             </form>
           </div>
 
-          <hr style={{ marginTop: "5rem" }} />
-
           {isSearching ? (
             projectsData.length >= 1 ? (
               <div className="projects__allItems">
+                <SectionTitle
+                  heading=""
+                  subheading={`${projectsData.length} results found`}
+                />
                 {projectsData.map((item) => (
-                  <ProjectItem key={item.id} item={item} />
+                  <ProjectItem key={item.id} item={item} showTags horizontal />
                 ))}
               </div>
             ) : (

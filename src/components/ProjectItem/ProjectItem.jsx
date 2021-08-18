@@ -14,10 +14,11 @@ export default function ProjectItem({
     demo: "#",
   },
   showTags = false,
+  horizontal = false,
 }) {
   const { img, name, desc, tags, demo, code } = item;
   return (
-    <ProjectItemStyles>
+    <ProjectItemStyles horizontal={horizontal}>
       <div className="projectItem__img">
         <img src={img} alt="project img" />
       </div>
