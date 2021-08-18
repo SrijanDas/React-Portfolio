@@ -3,12 +3,13 @@ import styled from "styled-components";
 const HeroStyle = styled.div`
   .hero {
     height: 100vh;
-    background-color: #202125;
+    /* background-color: #202125; */
     display: flex;
     padding: 10rem;
     justify-content: space-around;
     align-items: center;
     position: relative;
+    gap: 4rem;
   }
   .hero_left {
     width: 50%;
@@ -38,9 +39,12 @@ const HeroStyle = styled.div`
     display: flex;
     justify-content: center;
     width: 50%;
+    border-radius: 20px;
+    border: 2px solid var(--gray-2);
+    overflow: hidden;
     img {
       width: 100%;
-      height: 550px;
+      height: 450px;
       object-fit: cover;
     }
   }
@@ -96,14 +100,25 @@ const HeroStyle = styled.div`
       }
     }
   }
-
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 975px) {
     .hero {
-      margin-top: 7rem;
+      margin-top: 2rem;
       padding: 2rem 2rem 0 2rem;
       flex-direction: column;
       gap: 0;
+      height: auto;
     }
+    .hero__right {
+      width: 100%;
+      margin-top: 2rem;
+      img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
     .hero__heading {
       font-size: 1.4rem;
 
@@ -115,21 +130,9 @@ const HeroStyle = styled.div`
       margin-left: 0;
     }
     .hero__left {
-      padding: 2rem 2rem 0rem 2rem;
+      padding-top: 2rem;
       button {
         margin-top: 1rem;
-      }
-    }
-    .hero__right {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      img {
-        width: 100%;
-        height: 450px;
-        object-fit: cover;
       }
     }
 
