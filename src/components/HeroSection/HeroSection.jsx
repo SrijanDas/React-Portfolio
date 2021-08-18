@@ -19,8 +19,8 @@ export default function HeroSection() {
               <span className="hero__name">Srijan Das</span>
             </h1>
             <PText className="hero_subText">
-              I am a self taught web designer, developer and machine learning
-              engineer. I love to design and make new projects for the people.
+              Web developer and aspiring data scientist. <br />I love to design
+              and make new projects for the people.
             </PText>
             <StyledButton
               className="hero_btn"

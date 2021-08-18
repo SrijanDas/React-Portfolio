@@ -20,7 +20,7 @@ export default function ServicesSection() {
           <ServicesSectionItem
             icon={<CodeIcon />}
             title="Web Dev"
-            desc="I also develop the websites. I create high performance website with blazing fast speed."
+            desc="I develop websites that have high performance and stunning UI."
           />
           <ServicesSectionItem
             icon={<GiBrain />}

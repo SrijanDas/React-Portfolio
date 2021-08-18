@@ -20,6 +20,7 @@ export default function Home() {
       <ParticleBg />
       <ProjectsSection />
 
+      <ParticleBg />
       <ContactBanner />
     </div>
   );
