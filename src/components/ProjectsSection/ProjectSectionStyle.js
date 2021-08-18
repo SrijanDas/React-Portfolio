@@ -32,9 +32,16 @@ const ProjectSectionStyle = styled.div`
   .swiper-button-next::after {
     font-size: 2rem;
   }
+  .projects__seeAllProjectsBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    margin-top: 2rem;
+  }
   @media only screen and (max-width: 768px) {
     padding-bottom: 0;
     padding-top: 8rem;
+
     .projects__allItems {
       flex-direction: column;
       max-width: 400px;
