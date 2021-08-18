@@ -20,7 +20,7 @@ export default function ProjectsSection() {
         <div className="projects__seeAllProjectsBtn">
           <StyledButton
             btnLink="/projects"
-            btnText="See all Projects"
+            btnText="See all projects"
             outline
           />
         </div>
