@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 const ProjectStyle = styled.div`
   padding: 10rem 0;
+  padding-bottom: 0;
+  .container {
+    margin-bottom: 5rem;
+  }
   .projects-wrapper {
     margin-top: 5rem;
   }

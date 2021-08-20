@@ -1,6 +1,6 @@
 import React from "react";
 import { MdEmail, MdLocalPhone } from "react-icons/md";
-import ContactForm from "../ContactForm";
+// import ContactForm from "../ContactForm";
 import ContactInfoItem from "../ContactInfoItem";
 import ContactSectionStyle from "./ContactSectionStyle";
 import SectionTitle from "../SectionTitle";
@@ -19,9 +19,9 @@ export default function ContactSection() {
             />
             <ContactInfoItem text="Howrah, West Bengal, India" />
           </div>
-          <div className="right">
+          {/* <div className="right">
             <ContactForm />
-          </div>
+          </div> */}
         </div>
       </div>
     </ContactSectionStyle>

@@ -4,6 +4,7 @@ import SectionTitle from "../../components/SectionTitle";
 import ProjectsInfo from "../../assets/data/projects";
 import ProjectStyle from "./ProjectStyle";
 import ProjectItem from "../../components/ProjectItem/ProjectItem";
+import ContactBanner from "../../components/ContactBanner";
 
 export default function Projects() {
   const [searchText, setSearchText] = useState("");
@@ -98,6 +99,7 @@ export default function Projects() {
             <ProjectsInfoComponent />
           )}
         </div>
+        <ContactBanner />
       </ProjectStyle>
     </>
   );

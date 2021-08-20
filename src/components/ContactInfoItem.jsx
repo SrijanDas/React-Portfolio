@@ -6,11 +6,13 @@ import PText from "./PText";
 const ItemStyles = styled.div`
   padding: 2rem;
   background-color: var(--deep-dark);
+  border: 3px solid var(--deep-dark);
   display: flex;
   align-items: center;
   gap: 2rem;
   border-radius: 8px;
   margin-bottom: 2rem;
+
   .icon {
     color: var(--white);
     background-color: var(--gray-2);

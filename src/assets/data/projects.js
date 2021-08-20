@@ -2,7 +2,7 @@ import ProjectImg from "../images/projectImg.png";
 // import AmazonCloneImg from "../images/amazon-clone.jpg";
 import SocialsImg from "../images/socials.jpg";
 import GroceryStoreImg from "../images/grocery-store.jpg";
-// import CavinImg from "../images/cavinimg.jpg";
+import EcomImg from "../images/ecom_web.png";
 import ImageClassificationImg from "../images/image_class.png";
 import UsedCarPriceImg from "../images/car_price.png";
 import SalaryPredImg from "../images/sal_pred.png";
@@ -38,26 +38,27 @@ const projects = [
   //   code: "#",
   //   demo: "#",
   // },
-  // {
-  //   id: 4,
-  //   name: "E-Commerce Website",
-  //   category: "webdev",
-  //   desc: "ecommerce website",
-  //   img: CavinImg,
-  //   tags: ["React", "Django"],
-  //   code: "#",
-  //   demo: "#",
-  // },
+  {
+    id: 4,
+    name: "E-Commerce Website",
+    category: "webdev",
+    desc: "ecommerce website",
+    img: EcomImg,
+    tags: ["Vuejs", "Django"],
+    code: "https://github.com/SrijanDas/ecom-website-frontend",
+    demo: "https://ecom-web-d16ae.web.app/",
+  },
   {
     id: 5,
-    name: "Used Car Price Prediction",
+    name: "Sports Person Classifier",
     category: "ml",
-    desc: "Helps you to calculate price of a used car with the help of machine learning.",
-    img: UsedCarPriceImg,
-    tags: ["Python", "Flask", "Machine Learning", "Heroku"],
-    code: "https://github.com/SrijanDas/used-car-price-prediction",
-    demo: "https://used-car-price-predic.herokuapp.com/",
+    desc: "Classifies images of sports persons.",
+    img: ImageClassificationImg,
+    tags: ["Python", "Flask", "Machine Learning", "JavaScript", "Heroku"],
+    code: "https://github.com/SrijanDas/Sports-person-image-classification",
+    demo: "https://sports-person-classify.netlify.app/",
   },
+
   {
     id: 6,
     name: "Movie Recommender",
@@ -70,13 +71,13 @@ const projects = [
   },
   {
     id: 7,
-    name: "Sports Person Classifier",
+    name: "Used Car Price Prediction",
     category: "ml",
-    desc: "Classifies images of sports persons.",
-    img: ImageClassificationImg,
-    tags: ["Python", "Flask", "Machine Learning", "JavaScript", "Heroku"],
-    code: "https://github.com/SrijanDas/Sports-person-image-classification",
-    demo: "https://sports-person-classify.netlify.app/",
+    desc: "Helps you to calculate price of a used car with the help of machine learning.",
+    img: UsedCarPriceImg,
+    tags: ["Python", "Flask", "Machine Learning", "Heroku"],
+    code: "https://github.com/SrijanDas/used-car-price-prediction",
+    demo: "https://used-car-price-predic.herokuapp.com/",
   },
   {
     id: 8,

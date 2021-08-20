@@ -5,23 +5,20 @@ import HeroSection from "../../components/HeroSection/HeroSection";
 import ParticleBg from "../../components/ParticleBg";
 import ProjectsSection from "../../components/ProjectsSection/ProjectsSection";
 import ServicesSection from "../../components/ServicesSection/ServicesSection";
+import HomeStyle from "./HomeStyle";
 export default function Home() {
   return (
-    <div>
+    <HomeStyle>
       <ParticleBg />
       <HeroSection />
-
       <ParticleBg />
       <AboutSection />
-
       <ParticleBg />
       <ServicesSection />
-
       <ParticleBg />
       <ProjectsSection />
-
       <ParticleBg />
       <ContactBanner />
-    </div>
+    </HomeStyle>
   );
 }

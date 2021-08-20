@@ -59,7 +59,7 @@ export default function Footer() {
               },
               {
                 title: "Howrah, West Bengal, India",
-                path: "http://google.com/maps",
+                path: "#",
               },
             ]}
           />

@@ -13,9 +13,9 @@ const HeroStyle = styled.div`
   }
   .hero_left {
     width: 50%;
-    .hero_btn {
-      margin-top: 2rem;
-    }
+  }
+  .hero_btn {
+    margin-top: 3rem;
   }
   .hero__heading {
     font-size: 2rem;
@@ -32,7 +32,7 @@ const HeroStyle = styled.div`
   }
 
   .isFmvA {
-    margin-bottom: 2rem;
+    /* margin-bottom: 3rem; */
   }
 
   .hero__right {

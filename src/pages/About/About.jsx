@@ -19,7 +19,7 @@ export default function About() {
               {/* <h2 className="about__heading">A freelance Web developer</h2> */}
               <div className="about__info">
                 <PText>
-                  I am from Howrah, West Bengal, India. Since my childhood, i
+                  I am from Howrah, West Bengal, India. Since my childhood, I
                   love art and design. I always try to design stuff with my
                   unique point of view. I also love to create things that can be
                   usefull to others.
@@ -59,10 +59,7 @@ export default function About() {
             </div>
             <div className="about__info__item">
               <h1 className="about__info__heading">My Skills</h1>
-              <AboutInfoItem
-                title="Design"
-                items={["Photoshop", "Adobe Xd", "Figma"]}
-              />
+
               <AboutInfoItem
                 title="FrontEnd"
                 items={["HTML", "CSS", "JavaScript", "JQuery", "REACT"]}
@@ -71,6 +68,7 @@ export default function About() {
                 title="BackEnd"
                 items={["Nodejs", "Express", "Django", "Flask"]}
               />
+              <AboutInfoItem title="Database" items={["MongoDb", "MySql"]} />
               <AboutInfoItem
                 title="Machine Learning"
                 items={[
