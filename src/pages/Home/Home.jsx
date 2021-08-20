@@ -9,7 +9,7 @@ import HomeStyle from "./HomeStyle";
 export default function Home() {
   return (
     <HomeStyle>
-      <ParticleBg />
+      {/* <ParticleBg /> */}
       <HeroSection />
       <ParticleBg />
       <AboutSection />
