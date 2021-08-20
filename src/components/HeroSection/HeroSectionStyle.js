@@ -128,7 +128,7 @@ const HeroStyle = styled.div`
     }
     .hero__social {
       left: 0px;
-      bottom: -25%;
+      bottom: -20%;
       width: 20px;
       .hero__social__indicator {
         width: 20px;

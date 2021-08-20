@@ -20,7 +20,7 @@ export default function HeroSection() {
               <span className="hero__name">Srijan Das</span>
             </h1>
             <PText className="hero_subText">
-              Web developer and aspiring data scientist.I love to design and
+              Web developer and aspiring data scientist. I love to design and
               make new projects for the people.
             </PText>
             <div className="hero_btn">
