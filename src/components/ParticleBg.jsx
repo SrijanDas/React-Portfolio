@@ -4,10 +4,12 @@ import Particles from "react-particles-js";
 import { particlesConfig2 } from "../config/particle-config";
 
 const ParticleStyles = styled.div`
-  z-index: -100;
-  position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  #tsparticles {
+    width: 100%;
+    height: 100% !important;
+  }
 `;
 
 export default function ParticleBg() {

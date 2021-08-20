@@ -44,6 +44,7 @@ const AboutSectionStyle = styled.div`
   }
 
   @media only screen and (max-width: 950px) {
+    padding-top: 0;
     .aboutSection__left {
       flex: 4;
     }

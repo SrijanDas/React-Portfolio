@@ -23,30 +23,18 @@ const HeroStyle = styled.div`
       display: inline-block;
       width: 100%;
     }
-    .hero__name {
-      font-family: "Montserrat SemiBold";
-      font-size: 7rem;
-      color: var(--white);
-      margin-bottom: 2rem;
-    }
   }
 
-  .isFmvA {
-    /* margin-bottom: 3rem; */
+  .hero__name {
+    font-family: "Montserrat SemiBold";
+    font-size: 7rem;
+    color: var(--white);
+    margin-bottom: 2rem;
   }
 
   .hero__right {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    border-radius: 20px;
-    border: 2px solid var(--gray-2);
-    overflow: hidden;
-    img {
-      width: 100%;
-      height: 450px;
-      object-fit: cover;
-    }
+    width: 80%;
+    height: 150%;
   }
   .hero__social,
   .hero__scrollDown {
@@ -100,6 +88,12 @@ const HeroStyle = styled.div`
       }
     }
   }
+  @media only screen and (max-width: 1011px) {
+    .hero__right {
+      height: 22rem !important;
+      /* position: absolute; */
+    }
+  }
   @media only screen and (max-width: 975px) {
     .hero {
       margin-top: 2rem;
@@ -109,36 +103,32 @@ const HeroStyle = styled.div`
       height: auto;
     }
     .hero__right {
-      width: 100%;
-      margin-top: 2rem;
-      img {
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
-      }
+      height: 100%;
+      position: relative;
     }
   }
   @media only screen and (max-width: 768px) {
     .hero__heading {
       font-size: 1.4rem;
-
-      .hero__name {
-        font-size: 4.5rem;
-      }
+    }
+    .hero__name {
+      font-size: 4.5rem;
+    }
+    .hero_btn {
+      margin-top: 1rem;
     }
     .isFmvA {
       margin-left: 0;
     }
     .hero__left {
       padding-top: 2rem;
-      button {
-        margin-top: 1rem;
-      }
     }
-
+    .hero__right {
+      /* display: none; */
+    }
     .hero__social {
       left: 0px;
-      bottom: -15%;
+      bottom: -25%;
       width: 20px;
       .hero__social__indicator {
         width: 20px;

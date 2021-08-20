@@ -112,7 +112,7 @@ export const particlesConfig1 = {
 export const particlesConfig2 = {
   particles: {
     number: {
-      value: 80,
+      value: 200,
       density: {
         enable: true,
         value_area: 800,
@@ -206,7 +206,7 @@ export const particlesConfig2 = {
         speed: 2,
       },
       repulse: {
-        distance: 200,
+        distance: 80,
         duration: 0.4,
       },
       push: {

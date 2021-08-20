@@ -1,6 +1,6 @@
 import React from "react";
 import HeroStyles from "./HeroSectionStyle";
-import HeroImg from "../../assets/images/hero.jpg";
+// import HeroImg from "../../assets/images/hero.jpg";
 import SocialMediaArrow from "../../assets/images/social-media-arrow.svg";
 import ScrollDownArrow from "../../assets/images/scroll-down-arrow.svg";
 import PText from "../PText";
@@ -8,6 +8,7 @@ import StyledButton from "../StyledButton";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import ParticleBg from "../ParticleBg";
 export default function HeroSection() {
   return (
     <HeroStyles>
@@ -19,15 +20,16 @@ export default function HeroSection() {
               <span className="hero__name">Srijan Das</span>
             </h1>
             <PText className="hero_subText">
-              Web developer and aspiring data scientist. <br />I love to design
-              and make new projects for the people.
+              Web developer and aspiring data scientist.I love to design and
+              make new projects for the people.
             </PText>
             <div className="hero_btn">
               <StyledButton btnLink="/projects" btnText="see my projects" />
             </div>
           </div>
           <div className="hero__right">
-            <img src={HeroImg} alt="" />
+            <ParticleBg />
+            {/* <img src={HeroImg} alt="" /> */}
           </div>
 
           <div className="hero__social">
