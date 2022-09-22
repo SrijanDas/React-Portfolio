@@ -18,9 +18,8 @@ export default function AboutSection() {
             heading="About Me"
           />
           <PText>
-            I am a self taught developer and machine learning engineer from West
-            Bengal, India. I create professional websites and also analyze data
-            and develop machine learning models to solve real world problems.
+            I am a self taught developer. I can create fast and responsive
+            websites.
           </PText>
           <div className="aboutSection__buttons">
             <StyledButton btnLink="/projects" btnText="Works" />

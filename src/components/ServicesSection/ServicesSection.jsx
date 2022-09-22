@@ -19,8 +19,8 @@ export default function ServicesSection() {
           /> */}
           <ServicesSectionItem
             icon={<CodeIcon />}
-            title="Web Dev"
-            desc="I develop websites that have high performance and stunning UI."
+            title="Web Development"
+            desc="I develop websites that have high performance and stunning design."
           />
           <ServicesSectionItem
             icon={<GiBrain />}

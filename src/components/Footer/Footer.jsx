@@ -12,11 +12,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer__col1">
           <h1 className="footer__col1__title">Srijan Das</h1>
-          <PText>
-            A web developer and
-            <br />
-            aspiring data scientist.
-          </PText>
+          <PText>Full Stack Developer</PText>
         </div>
         <div className="footer__col2">
           <FooterCol

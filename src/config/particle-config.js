@@ -1,3 +1,4 @@
+import { isMobile } from "react-device-detect";
 export const particlesConfig1 = {
   particles: {
     number: {
@@ -206,14 +207,14 @@ export const particlesConfig2 = {
         speed: 2,
       },
       repulse: {
-        distance: 80,
+        distance: isMobile ? 20 : 60,
         duration: 0.4,
       },
       push: {
-        particles_nb: 4,
+        particles_nb: 6,
       },
       remove: {
-        particles_nb: 2,
+        particles_nb: 4,
       },
     },
   },
